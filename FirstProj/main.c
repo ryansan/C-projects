@@ -8,8 +8,31 @@
 
 #include <stdio.h>
 
+
+int foo(int number){
+    printf("ur number %d\n", number);
+    return number;
+}
+
+int maks(int a[]){
+    int m = 0;
+    for(int i = 0; i < 6; i++){
+        if(a[i] >= m){
+            m = a[i];
+        }
+    }
+    printf("m: %d\n", m);
+    return m;
+}
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
+    foo(5);
+    
+    int a[] = {1,5,20,30,10,40};
+    int *ptr = a;
+    maks(ptr);
     return 0;
 }
+
