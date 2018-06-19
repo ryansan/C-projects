@@ -33,6 +33,17 @@ int main(int argc, const char * argv[]) {
     int a[] = {1,5,20,30,10,40};
     int *ptr = a;
     maks(ptr);
+    
+    pointerTesting();
+    
     return 0;
 }
 
+int pointerTesting(){
+    int a = 20;
+    int *PointerToA = &a;
+    
+    printf("A: %d", a);
+    printf("\nAdress: \n%p", PointerToA);
+    return 0;
+}
